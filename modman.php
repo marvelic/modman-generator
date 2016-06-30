@@ -17,7 +17,7 @@ function init(){
 
 function read($item){
   $base = getcwd()."/";
-  $exclude = array(".","..");
+  $exclude = array(".","..",".DS_Store");
   if(is_dir($item)){
     $temp = scandir($item);
     foreach ($temp as $key => $value)
